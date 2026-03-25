@@ -1,0 +1,133 @@
+# -----------------------
+
+# Node.js (Frontend + Backend)
+
+# -----------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build outputs
+
+dist/
+build/
+
+# Vite
+
+.vite/
+
+# Environment variables
+
+.env
+.env.*
+
+# -----------------------
+
+# Python / ML Service
+
+# -----------------------
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+
+#Python Virtual Environment (VERY IMPORTANT)
+
+ml_service/ppe-kit/
+ppe-kit/
+*/bin/
+*/lib/
+*/include/
+
+
+# Python cache & tools
+
+pycache/
+*.pyc
+
+# Jupyter / logs
+
+.ipynb_checkpoints/
+*.log
+
+# -----------------------
+
+# ML Models & Outputs (IMPORTANT)
+
+# -----------------------
+
+# Trained weights (very large)
+
+*.pt
+*.pth
+
+# YOLO runs / experiment outputs
+
+ml_service/models/runs/
+ml_service/models/runs1/
+
+# Model artifacts
+
+models/*.pt
+
+# -----------------------
+
+# Dataset (very large)
+
+# -----------------------
+
+dataset/
+*.zip
+*.tar
+*.gz
+
+# -----------------------
+
+# OS / Editor files
+
+# -----------------------
+
+.DS_Store
+Thumbs.db
+
+# VS Code
+
+.vscode/
+
+# -----------------------
+
+# Misc
+
+# -----------------------
+
+*.tmp
+*.swp
+*.bak
+
+# Ignore coverage & reports
+
+coverage/
+*.coverage
+
+# -----------------------
+
+# Optional (keep if needed)
+
+# -----------------------
+
+# If you want to KEEP model weights or dataset, comment above lines
+
+# !models/yolov8s.pt
+
+# !dataset/PPE_kit_dataset/
