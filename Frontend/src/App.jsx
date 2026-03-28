@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
+import ImageFeed from "./pages/ImageFeed";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <Routes>
           <Route path="/"           element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard"  element={<Dashboard />} />
+          <Route path="/image-feed" element={<ImageFeed />} />
         </Routes>
       </main>
     </div>

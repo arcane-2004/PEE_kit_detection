@@ -16,8 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = YOLO("./models/runs/detect/finetune_v2_150epochs/weights/best.pt")
+# model = YOLO("./models/runs/detect/finetune_v2_150epochs/weights/best.pt")
 # model = YOLO("./models/runs1/segment/ppe_runs/ppe_v1/weights/best.pt")
+model = YOLO("./models/runs2/detect/train/weights/best.pt")
+# model = YOLO("./models/runs3/detect (1)/finetune_human/exp1/weights/")
 
 latest_status = {
     "total_persons": 0,
@@ -32,8 +34,8 @@ def home():
     return {"message": "API Running"}
 
 
-@app.post("/predict")
-async def predict(file: UploadFile = File(...)):
+@app.post("/detect_image")
+async def detect_image(file: UploadFile = File(...)):
     
     contents = await file.read()
     np_arr = np.frombuffer(contents, np.uint8)

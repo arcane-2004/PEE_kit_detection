@@ -12,6 +12,7 @@ const Dashboard = () => {
 			<div className="p-6 grid grid-cols-3 gap-6">
 
 				<div className="col-span-2">
+					
 					<VideoFeed />
 				</div>
 

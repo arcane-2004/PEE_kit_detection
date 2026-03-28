@@ -76,6 +76,7 @@ pycache/
 
 ml_service/models/runs/
 ml_service/models/runs1/
+ml_service/models/runs2/
 
 # Model artifacts
 

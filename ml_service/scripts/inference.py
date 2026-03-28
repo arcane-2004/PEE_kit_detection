@@ -4,9 +4,9 @@ import time
 from collections import Counter
 
 # Load Model
-model = YOLO("../models/runs/detect/finetune_v2_150epochs/weights/best.pt")
+# model = YOLO("../models/runs/detect/finetune_v2_150epochs/weights/best.pt")
 # model = YOLO("../models/runs1/segment/ppe_runs/ppe_v1/weights/best.pt")
-# model = YOLO("../models/runs2/detect/runs/detect/yolo_training45/weights/best.pt")
+model = YOLO("../models/runs2/detect/train/weights/best.pt")
 
 #Open Webcam
 cap = cv2.VideoCapture(0)

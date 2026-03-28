@@ -1,15 +1,16 @@
 import React from 'react'
 import { useEffect, useState } from "react";
+import axios from 'axios';
 
 const AlertPanel = () => {
     const [status, setStatus] = useState(null);
     console.log('status', status)
     useEffect(() => {
-        const interval = setInterval(() => {
-            fetch("http://127.0.0.1:8000/latest_status")
-                .then((res) => res.json())
-                .then((data) => setStatus(data))
+        const interval = setInterval(async () => {
+            await axios.get(`${import.meta.env.VITE_BASE_URL}/latest_status`)
+                .then((res) => setStatus(res.data))
                 .catch((err) => console.error(err));
+
         }, 1000); // every 1 sec
 
         return () => clearInterval(interval);
