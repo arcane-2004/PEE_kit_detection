@@ -18,8 +18,8 @@ app.add_middleware(
 
 # model = YOLO("./models/runs/detect/finetune_v2_150epochs/weights/best.pt")
 # model = YOLO("./models/runs1/segment/ppe_runs/ppe_v1/weights/best.pt")
-model = YOLO("./models/runs2/detect/train/weights/best.pt")
-# model = YOLO("./models/runs3/detect (1)/finetune_human/exp1/weights/")
+# model = YOLO("./models/runs2/detect/train/weights/best.pt")
+model = YOLO("./models/runs2/detect/finetune_human/exp1/weights/best.pt")
 
 latest_status = {
     "total_persons": 0,
