@@ -6,7 +6,9 @@ from collections import Counter
 # Load Model
 # model = YOLO("../models/runs/detect/finetune_v2_150epochs/weights/best.pt")
 # model = YOLO("../models/runs1/segment/ppe_runs/ppe_v1/weights/best.pt")
-model = YOLO("../models/runs2/detect/train/weights/best.pt")
+# model = YOLO("../models/runs2/detect/train/weights/best.pt")
+# model = YOLO("../models/runs2/detect/improve_multiclass/exp1/weights/best.pt")
+model = YOLO("../models/yolov8s.pt")
 
 #Open Webcam
 cap = cv2.VideoCapture(0)

@@ -8,7 +8,8 @@ print("Starting test..............")
 # LOAD MODEL
 #-----------------------------
 # model = YOLO("runs/detect/finetune_v2_150epochs/weights/best.pt")
-model = YOLO('../models/runs2/detect/train/weights/best.pt')
+# model = YOLO('../models/runs2/detect/train/weights/best.pt')
+model = YOLO("../models/runs2/detect/improve_multiclass/exp1/weights/best.pt")
 
 #-------------------------
 # EVLUATE
