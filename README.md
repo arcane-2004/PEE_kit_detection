@@ -85,10 +85,10 @@ PEE_kit_detection/
 ![Dashboard](./assets/screenshots/dashboard.png)
 
 ### 🔹 Image Detection
-![Image Detection](./assets/screenshots/image_detection.png)
+![Image Detection](./assets/screenshots/image_detection.jpeg)
 
 ### 🔹 Violation Alert
-![Violation](./assets/screenshots/violation.png)
+![Violation](./assets/screenshots/violation.jpeg)
 
 ---
 
