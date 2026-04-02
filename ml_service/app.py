@@ -16,12 +16,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# model = YOLO("./models/runs/detect/finetune_v2_150epochs/weights/best.pt")
-# model = YOLO("./models/runs1/segment/ppe_runs/ppe_v1/weights/best.pt")
-# model = YOLO("./models/runs2/detect/train/weights/best.pt")
-# model = YOLO("./models/runs2/detect/finetune_human/exp1/weights/best.pt")
 human_model = YOLO("./models/yolov8s.pt")
-ppe_model = YOLO("./models/runs2/detect/improve_multiclass/exp1/weights/best.pt")
+ppe_model = YOLO("./models/ppe_model.pt")
 
 latest_status = {
     "total_persons": 0,
