@@ -82,7 +82,7 @@ PEE_kit_detection/
 > 📌 Add your screenshots here
 
 ### 🔹 Dashboard (Live Detection)
-![Dashboard](../Frontend/src/assets/screenshots/dashboard.png)
+![Dashboard](./Frontend/src/assets/screenshots/dashboard.png)
 
 ### 🔹 Image Detection
 ![Image Detection](./assets/screenshots/image_detection.jpeg)
