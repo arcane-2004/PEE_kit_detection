@@ -163,7 +163,7 @@ Create a `.env` file in the `client` directory:
 ```env
 # Backend API URL
 VITE_API_BASE_URL=http://localhost:8000
-
+```
 
 ---
 
